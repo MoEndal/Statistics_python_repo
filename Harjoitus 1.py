@@ -2,20 +2,20 @@ import math
 from statistics import mean, median, mode
 
 
-lista_str = input("Syötä luvut ja erota ne pilkulla: ")
-lista_pilk_ero = (lista_str.split(","))
-print(lista_pilk_ero)
+list_str = input("Enter the numbers and seperate them with a comma: ")
+list_comma = (list_str.split(","))
+print(list_comma)
 
-# Muutetaan luvut numeroiksi
-lista = []
-for luku in lista_pilk_ero:
-    lista.append(float(luku))
+# Change to numbers
+list = []
+for luku in list_comma:
+    list.append(float(luku))
 
 # Tulostetaan min ja max
-maksimi = max(lista)
-minimi = min(lista)
-keskiarvo = mean(lista)
-mediaani = median(lista)
-moodi = mode(lista)
+maxium = max(list)
+minium = min(list)
+meean = mean(list)
+meedian = median(list)
+moode = mode(list)
 
-print(f'Maximi {maksimi}\nMinimi {minimi}\nKeskiarvo {keskiarvo}\nMediaani {mediaani}\nMoodi {moodi}')
+print(f'Max {maxium}\nMin {minium}\nMean {meean}\nMedian {meedian}\nMode {moode}')
